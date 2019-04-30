@@ -44,9 +44,57 @@ public:
 		}
 	}
 
+	//! @brief 範囲For文確認用
+	class RangeForTest
+	{
+	public:
+		RangeForTest()
+		{
+			int i = 4;
+			for (auto r = begin(); r!=end();r++ )
+			{
+				*r = i;
+				i--;
+			}
+		}
+		int* begin()
+		{
+			return m_array;
+		}
+		int* end()
+		{
+			return &m_array[size()];
+		}
+		std::size_t const size() const
+		{
+			return arraySize(m_array);
+		}
+	private:
+		//! @brief これをlambdaにしてsize内に入れようとしたがNの宣言ができないので難しそう？
+		template<class T, std::size_t N>
+		std::size_t arraySize(const T(&)[N]) const
+		{
+			return N;
+		}
+		//! [デフォルトメンバ初期化子](https://cpprefjp.github.io/lang/cpp11/non_static_data_member_initializers.html)
+		static int const c_size = 5;
+		int m_array[c_size]{0,1,2,3,4};
+	};
+
+	void RangeForStatement()
+	{
+		RangeForTest array;
+		for (auto i : array)
+		{
+			std::cout << i << std::endl;
+		}
+	}
+
 	void main() override
 	{
 		Decltype();
+		RangeForStatement();
+
 	}
 
 private:
