@@ -3,12 +3,55 @@ C++11,14,17の機能を調査([参考URL](https://cpprefjp.github.io/lang.html))
 ## 環境準備<br>
 ・Visualstudio 2017 Community を使用<br>
 ・WindowsSDK 10 を使用<br>
+
+
+## スマートポインター
+### [std::shared_ptr（C++11）]()
+どんな機能？<br>
+　<br>
+何に使える？<br>
+　<br>
+### [std::unique_ptr（C++11）]()
+どんな機能？<br>
+　<br>
+何に使える？<br>
+　<br>
+### [std::make_shared（C++17）]()
+どんな機能？<br>
+　<br>
+何に使える？<br>
+　<br>
+### [std::make_unique（C++17）]()
+どんな機能？<br>
+　<br>
+何に使える？<br>
+　<br>
+
+
+## ラムダ式
+### [ラムダ式（C++11）](https://cpprefjp.github.io/lang/cpp11/lambda_expressions.html)
+どんな機能？<br>
+　<br>
+何に使える？<br>
+　<br>
+### [ジェネリックラムダ（C++14）](https://cpprefjp.github.io/lang/cpp14/generic_lambdas.html)
+どんな機能？<br>
+　<br>
+何に使える？<br>
+　<br>
+### [ラムダ式の初期化キャプチャ（C++14）](https://cpprefjp.github.io/lang/cpp14/initialize_capture.html)
+どんな機能？<br>
+　<br>
+何に使える？<br>
+　<br>
+
+
 ## C++11 機能
 ### [decltype](https://cpprefjp.github.io/lang/cpp11/decltype.html)
 どんな機能？<br>
 　変数の型・戻り値型などを、式をもとに型を決定できる。<br>
 何に使える？<br>
-　templateを使用した関数などに対応しやすい<br>
+　templateを使用した関数などに対応しやすい。autoと組み合わせると汎用的なコードが書きやすい？<br>
 ### [範囲For文](https://cpprefjp.github.io/lang/cpp11/range_based_for.html)
 どんな機能？<br>
 　配列、コンテナの要素数のループ記述を簡易にできる<br>
@@ -24,3 +67,35 @@ C++11,14,17の機能を調査([参考URL](https://cpprefjp.github.io/lang.html))
 　高コストになりがちな代入・コピーを回避するための、ムーブをさせる為のセマンティクスと、従来の（左辺値）参照と分ける為の言語機能<br>
 何に使える？<br>
 　バッファ・マネージャーを有するサイズが大きくなりがちなクラスの、関数・クラスを越えた受け渡しが必要な場合に対応可能<br>
+### [overrideとfinal](https://cpprefjp.github.io/lang/cpp11/override_final.html)
+どんな機能？<br>
+　明示的なオーバーライド、継承・オーバーライド不可にさせる<br>
+何に使える？<br>
+　クラス設計的に、最終クラスに使う。関数オーバーライドの明示的にすることでの可読性、継承元変更による派生先の更新忘れ防止等<br>
+
+## C++17機能
+### [入れ子名前空間の定義]()
+どんな機能？<br>
+　<br>
+何に使える？<br>
+　<br>
+### [if文とswitch文の条件式と初期化を分離]()
+どんな機能？<br>
+　<br>
+何に使える？<br>
+　<br>
+### [構造化束縛]()
+どんな機能？<br>
+　<br>
+何に使える？<br>
+　<br>
+### [static_assert のメッセージ省略を許可]()
+どんな機能？<br>
+　<br>
+何に使える？<br>
+　<br>
+### [std::clamp]()
+どんな機能？<br>
+　<br>
+何に使える？<br>
+　<br>
