@@ -200,7 +200,7 @@ public:
         static void main()
         {
             std::string str{ "test" };
-            VariableArgumentTemplate m_test(1, 1.5, str);
+            VariableArgumentTemplate test(1, 1.5, str);
         }
         VariableArgumentTemplate(Args1... args)
         {

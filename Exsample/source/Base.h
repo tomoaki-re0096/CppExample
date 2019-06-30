@@ -1,3 +1,6 @@
+#ifndef BaseH
+#define BaseH
+
 #include <memory>
 
 //! @brief 基底クラス 
@@ -11,3 +14,4 @@ public:
 private:
 
 };
+#endif // !BaseH

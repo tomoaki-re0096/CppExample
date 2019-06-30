@@ -2,7 +2,7 @@
 C++11,14,17の機能を調査([参考URL](https://cpprefjp.github.io/lang.html))
 ## 環境準備<br>
 ・Visualstudio 2017 Community を使用<br>
-・WindowsSDK 10 を使用<br>
+・WindowsSDK 10 を使用→10.0.10240.0以上で動作確認<br>
 
 
 ## スマートポインター
@@ -74,21 +74,22 @@ C++11,14,17の機能を調査([参考URL](https://cpprefjp.github.io/lang.html))
 　クラス設計的に、最終クラスに使う。関数オーバーライドの明示的にすることでの可読性、継承元変更による派生先の更新忘れ防止等<br>
 
 ## C++17機能
-### [入れ子名前空間の定義]()
+### [入れ子名前空間の定義](https://cpprefjp.github.io/lang/cpp17/nested_namespace.html)
 どんな機能？<br>
-　<br>
+　入れ子になっているnamespaceの宣言等を省略<br>
 何に使える？<br>
-　<br>
-### [if文とswitch文の条件式と初期化を分離]()
+　変数宣言や、namespaceの宣言時に↓のような書き方ができる<br>
+　namespace A::B::C::D{ int num;} A::B::C::D::num = 0;<br>
+### [if文とswitch文の条件式と初期化を分離](https://cpprefjp.github.io/lang/cpp17/selection_statements_with_initializer.html)
 どんな機能？<br>
-　<br>
+　if,switchで条件文内に変数初期化ができる<br>
 何に使える？<br>
-　<br>
-### [構造化束縛]()
+　条件用の変数をif,switch内のみで使用する一時変数的な使い方ができる<br>
+### [構造化束縛](https://cpprefjp.github.io/lang/cpp17/structured_bindings.html)
 どんな機能？<br>
-　<br>
+　pair・tuple型、map型等の構造体の各要素を取り出す<br>
 何に使える？<br>
-　<br>
+　（mapは特にかもだが）データのバッファと、ハッシュ値的なキーの値を、同時に別変数として取り出すことができる。<br>
 ### [static_assert のメッセージ省略を許可]()
 どんな機能？<br>
 　<br>
