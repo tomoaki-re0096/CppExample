@@ -3,7 +3,7 @@ C++11,14,17の機能を調査([参考URL](https://cpprefjp.github.io/lang.html))
 ## 環境準備<br>
 ・Visualstudio 2017 Community を使用<br>
 ・WindowsSDK 10 を使用→10.0.10240.0以上で動作確認<br>
-
+・@todo:https://docs.microsoft.com/ja-jp/cpp/build/reference/std-specify-language-standard-version?view=vs-2019
 
 ## スマートポインター
 ### [std::shared_ptr（C++11）]()
