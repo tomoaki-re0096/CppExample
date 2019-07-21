@@ -108,7 +108,7 @@ public:
         {
             return &m_array[size()];
         }
-        std::size_t const size() const
+        const std::size_t size() const
         {
             return arraySize(m_array);
         }
@@ -122,7 +122,7 @@ public:
         }
         //! [非静的メンバ変数の初期化](https://cpprefjp.github.io/lang/cpp11/non_static_data_member_initializers.html)
         //! 宣言時に初期値を代入できるので、初期化忘れなどを避けられる。
-        static int const c_size = 5;
+        static const int c_size = 5;
         int m_array[c_size]{0,1,2,3,4};
     };
 

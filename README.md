@@ -6,12 +6,12 @@ C++11,14,17の機能を調査([参考URL](https://cpprefjp.github.io/lang.html))
 ・@todo:https://docs.microsoft.com/ja-jp/cpp/build/reference/std-specify-language-standard-version?view=vs-2019
 
 ## スマートポインター
-### [std::shared_ptr（C++11）]()
+### [std::shared_ptr（C++11）](https://cpprefjp.github.io/reference/memory/shared_ptr.html)
 どんな機能？<br>
 　<br>
 何に使える？<br>
 　<br>
-### [std::unique_ptr（C++11）]()
+### [std::unique_ptr（C++11）](https://cpprefjp.github.io/reference/memory/unique_ptr.html)
 どんな機能？<br>
 　<br>
 何に使える？<br>
@@ -90,13 +90,13 @@ C++11,14,17の機能を調査([参考URL](https://cpprefjp.github.io/lang.html))
 　pair・tuple型、map型等の構造体の各要素を取り出す<br>
 何に使える？<br>
 　（mapは特にかもだが）データのバッファと、ハッシュ値的なキーの値を、同時に別変数として取り出すことができる。<br>
-### [static_assert のメッセージ省略を許可]()
+### [static_assert のメッセージ省略を許可](https://cpprefjp.github.io/lang/cpp17/extending_static_assert.html)
 どんな機能？<br>
-　<br>
+　C++11から実装されたstatic_assertの、第2引数（文字列リテラル）が不要に。<br>
 何に使える？<br>
-　<br>
-### [std::clamp]()
+　コンパイル時にメッセージが必要にない場合に対応可能<br>
+### [std::clamp](https://cpprefjp.github.io/reference/algorithm/clamp.html)
 どんな機能？<br>
-　<br>
+　第2,3引数に設定した下限値、上限値に収める。収まっている場合は第1引数の値を返す。<br>
 何に使える？<br>
-　<br>
+　これまでmin、maxを駆使して、下限上限の範囲内収める処理を書いていた箇所を、1行で済ませられる<br>
