@@ -8,14 +8,16 @@ C++11,14,17の機能を調査([参考URL](https://cpprefjp.github.io/lang.html))
 ## スマートポインター
 ### [std::shared_ptr（C++11）](https://cpprefjp.github.io/reference/memory/shared_ptr.html)
 どんな機能？<br>
-　<br>
+　リソース（newで作成したアドレス）の所有権を共有するクラス型<br>
+　（最初に作成したオブジェクトを含めて）所有権を共有したオブジェクトがすべて削除されれば、リソースも解放される。<br>
 何に使える？<br>
-　<br>
+　リソース（ポインタ）をクラス間で共有するが、リソース保持者が削除される前に、リソース共有先の削除が保証されていない場合、アクセス違反が起こりづらい。<br>
 ### [std::unique_ptr（C++11）](https://cpprefjp.github.io/reference/memory/unique_ptr.html)
 どんな機能？<br>
-　<br>
+　リソース（newで作成したアドレス）の所有権は唯一で管理するクラス型<br>
 何に使える？<br>
-　<br>
+　所有権は単一で問題ないオブジェクトの解放忘れを防ぐ。<br>
+　リソースへのアクセスはgetterのみなら生ポインタを渡すことも可能だが、それは隠蔽性が落ちる為、要注意。<br>
 ### [std::make_shared（C++17）]()
 どんな機能？<br>
 　<br>
