@@ -18,16 +18,18 @@ C++11,14,17の機能を調査([参考URL](https://cpprefjp.github.io/lang.html))
 何に使える？<br>
 　所有権は単一で問題ないオブジェクトの解放忘れを防ぐ。<br>
 　リソースへのアクセスはgetterのみなら生ポインタを渡すことも可能だが、それは隠蔽性が落ちる為、要注意。<br>
-### [std::make_shared（C++17）]()
+### [std::make_shared（C++17）](https://cpprefjp.github.io/reference/memory/make_shared.html)
 どんな機能？<br>
-　<br>
+　shared_ptr<T>型のオブジェクト生成処理<br>
 何に使える？<br>
-　<br>
-### [std::make_unique（C++17）]()
+　通常の shared_ptr<T>(new T); では、Tの生成・内部的参照カウンタが別々で確保されるが、  
+　make_shared ではTと参照カウンタを1つのブロックで確保されるので効率的。<br>
+### [std::make_unique（C++17）](https://cpprefjp.github.io/reference/memory/make_unique.html)
 どんな機能？<br>
-　<br>
+　unique_ptr<T>型のオブジェクト生成処理<br>
 何に使える？<br>
-　<br>
+　newで例外が発生した時にnewで確保した時のメモリがリークする…らしい  
+　https://ja.stackoverflow.com/questions/24876/make-unique%E3%81%AE%E5%88%A9%E7%82%B9<br>
 
 
 ## ラムダ式
