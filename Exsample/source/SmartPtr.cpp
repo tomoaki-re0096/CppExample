@@ -4,29 +4,36 @@
 class SmartPtrImpl : public SmartPtr
 {
 private:
-    void main() override
+    class TestClass
+    {
+    public:
+        TestClass()
+        {
+
+        }
+        ~TestClass()
+        {
+
+        }
+    };
+    //! shared_ptr
+    void sharedTest()
+    {
+    
+    }
+    //! unique_ptr
+    void uniqueTest()
     {
 
     }
-
-    class SharedPtr
+    void main() override
     {
-        static void main()
-        {
-
-        }
-    };
-
-    class UniquePtr
-    {
-        static void main()
-        {
-
-        }
-    };
+        sharedTest();
+        uniqueTest();
+    }
 };
 
 std::unique_ptr<SmartPtr> SmartPtr::create()
 {
-    return std::unique_ptr<SmartPtrImpl>();
+    return std::make_unique<SmartPtrImpl>();
 }
