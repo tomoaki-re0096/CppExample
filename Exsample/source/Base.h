@@ -11,7 +11,5 @@ public:
     virtual ~Base() = default;
 
     virtual void main() = 0;
-private:
-
 };
 #endif // !BaseH
