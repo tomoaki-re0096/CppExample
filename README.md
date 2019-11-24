@@ -46,6 +46,7 @@ C++11,14,17の機能を調査([参考URL](https://cpprefjp.github.io/lang.html))
 　関数パラメータをテンプレートのようにしてラムダ式を扱える。  
 　※ただし、ラムダ式のautoは、パラメータのテンプレートパラメータには使用できない  
 　　テンプレートのままなので、std::functionには代入できない<br>
+　　c++20からは通常の関数でも使用ができる模様(https://cpprefjp.github.io/lang/cpp20/function_templates_with_auto_parameters.html)  
 ### [ラムダ式の初期化キャプチャ（C++14）](https://cpprefjp.github.io/lang/cpp14/initialize_capture.html)
 - どんな機能？<br>
 　任意の式の結果をラムダ式にキャプチャする機能（変数の宣言）<br>
